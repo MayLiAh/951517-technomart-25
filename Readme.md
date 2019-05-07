@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Майя Пименова](https://up.htmlacademy.ru/htmlcss/25/user/951517).
-* Наставник: `Егор Глебов`.
+* Наставник: [Егор Глебов](https://htmlacademy.ru/profile/beast).
 
 ---
 
