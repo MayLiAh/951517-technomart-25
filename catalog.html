@@ -47,6 +47,66 @@
                 <li><a href="#">Инструмент</a></li>
                 <li class="breadcrumbs-current">Перфораторы</li>
             </ul>
+            <section class="filters">
+                <h2 class="flter-name">Фильтры:</h2>
+                <form class="filter-form">
+                    <fieldset>
+                        <legend>Цена:</legend>
+                        <input type="range" name="range" min="0" max="30000" step="100">
+                        <p class="min-max-price">
+                        <input type="number" name="min-price" value="0">
+                        -
+                        <input type="number" name="max-price" value="30000">
+                        </p>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Производители:</legend>
+                        <ul>
+                            <li class="filter-option">
+                                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" 
+                                name="bosh" id="bosh" checked>
+                                <label for="bosh">Bosh</label>
+                            </li>
+                            <li class="filter-option">
+                                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" 
+                                name="interskol" id="interskol">
+                                <label for="interskol">Интерскол</label>
+                            </li>
+                            <li class="filter-option">
+                                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" 
+                                name="makita" id="makita" checked>
+                                <label for="makita">Makita</label>
+                            </li>
+                            <li class="filter-option">
+                                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" 
+                                name="dewalt" id="dewalt">
+                                <label for="dewalt">Dewalt</label>
+                            </li>
+                            <li class="filter-option">
+                                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" 
+                                name="hitachi" id="hitachi">
+                                <label for="hitachi">Hitachi</label>
+                            </li>
+                        </ul>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Питание:</legend>
+                        <ul>
+                            <li class="filter-option">
+                                <input class="visually-hidden filter-input filter-input-radio" type="radio" 
+                                name="supply" id="battery" checked>
+                                <label for="battery">Аккумуляторные</label>
+                            </li>
+                            <li class="filter-option">
+                                <input class="visually-hidden filter-input filter-input-radio" type="radio" 
+                                name="supply" id="mains">
+                                <label for="mains">Сетевые</label>
+                            </li>
+                        </ul>
+                    </fieldset>
+                    <button type="submit" class="button form-button-submit">Показать</button>
+                </form>
+            </section>
             <section class="catalog">
                 <h2>Перфораторы</h2>
                 <ul class="catalog-list">
@@ -289,5 +349,13 @@
                 <a class="button" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
             </p>
         </footer>
+        <section class="modal modal-item-in-cart">
+            <h3>Товар добавлен в корзину!</h3>
+            <p>
+                <a class="button order" href="#">Оформить заказ</a>
+                <button class="button return-to-catalog" type="button">Продолжить покупки</button>
+            </p>
+            <span class="modal-close">Закрыть</span>
+        </section>
     </body>
 </html>

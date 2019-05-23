@@ -104,5 +104,35 @@
                 <a class="button" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
             </p>
         </footer>
+        <section class="modal modal-map-full">
+            <h2 class="visually-hidden">Как до нас добраться</h2>
+            <p>
+                <img src="img/map-full.jpg" width="940" height="447" alt="Офис находится по адресу ул. Б. Конюшенная, д. 19/8 Санкт-Петербург">
+            </p>
+            <span class="modal-close">Закрыть</span>
+        </section>
+        <section class="modal modal-write-us">
+            <h2 class="visually-hidden">Обратная связь</h2>
+            <form class="write-us" action="#" method="POST">
+                <p>
+                    <label for="name">Ваше имя:</label>
+                    <input type="text" id="name" name="name" placeholder="Имя Фамилия">
+                </p>
+                <p>
+                    <label for="email">Ваш e-mail:</label>
+                    <input type="email" id="email" name="email" placeholder="email@example.com">
+                </p>
+                <p>
+                    <label for="message-text">
+                        Текст письма:
+                        <textarea id="message-text" name="message-text">
+                            В свободной форме
+                        </textarea>
+                    </label>
+                </p>
+                <button type="submit" class="button write-us-button">Отправить</button>
+            </form>
+            <span class="modal-close">Закрыть</span>
+        </section>
     </body>
 </html>
