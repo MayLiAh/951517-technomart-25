@@ -3,6 +3,10 @@
     <head>
         <meta charset="utf-8">
         <title>Техномарт: каталог</title>
+        <link href="css/normalize.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&display=swap&subset=cyrillic" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&display=swap&subset=cyrillic" rel="stylesheet">
     </head>
     <body>
         <header class="page-header">
@@ -10,7 +14,7 @@
             <a class="header-logo" href="index.html">Техномарт</a>
             <span class="header-search">Поиск</span>
             <a class="header-bookmarks" href="#">Закладки: 0</a>
-            <a class="header-cart" href="#">Корзина: 10</a>
+            <a class="header-cart cart-not-empty" href="#">Корзина: 10</a>
             <a class="header-order" href="#">Оформить заказ</a>
             </div>
             <h1 class="page-header-title">Интернет-магазин
@@ -21,9 +25,11 @@
                 <span class="address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
             </p>
             <section class="header-user">
-                <a class="user-name" href="#">Равшан Джамшутович</a>
-                <button class="user-logaut-link" href="#">Выход</button>
-            <ul class="user-navigation">    
+                <p class="user-name">
+                    <a class="name" href="#">Равшан Джамшутович</a>
+                    <button class="user-logaut-link">Выход</button>
+                </p>
+            <ul class="user-navigation-login">    
                 <li><a class="user-orders" href="#">Мои заказы</a></li>
                 <li><a class="user-profile" href="#">Личный кабинет</a></li>
             </ul>
@@ -48,42 +54,44 @@
                 <li class="breadcrumbs-current">Перфораторы</li>
             </ul>
             <section class="filters">
-                <h2 class="flter-name">Фильтры:</h2>
+                <h2 class="flter-name">Фильтр:</h2>
                 <form class="filter-form">
                     <fieldset>
                         <legend>Цена:</legend>
-                        <input type="range" name="range" min="0" max="30000" step="100">
+                        <p class="range">
+                        <input class="input-range" type="range" name="range" min="0" max="30000" step="100">
+                        </p>
                         <p class="min-max-price">
-                        <input type="number" name="min-price" value="0">
+                        <input class="input-range-number" type="number" name="min-price" value="0">
                         -
-                        <input type="number" name="max-price" value="30000">
+                        <input class="input-range-number" type="number" name="max-price" value="30000">
                         </p>
                     </fieldset>
                     <fieldset>
                         <legend>Производители:</legend>
                         <ul>
                             <li class="filter-option">
-                                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" 
+                                <input class="filter-input filter-input-checkbox" type="checkbox" 
                                 name="bosh" id="bosh" checked>
                                 <label for="bosh">Bosh</label>
                             </li>
                             <li class="filter-option">
-                                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" 
+                                <input class="filter-input filter-input-checkbox" type="checkbox" 
                                 name="interskol" id="interskol">
                                 <label for="interskol">Интерскол</label>
                             </li>
                             <li class="filter-option">
-                                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" 
+                                <input class="filter-input filter-input-checkbox" type="checkbox" 
                                 name="makita" id="makita" checked>
                                 <label for="makita">Makita</label>
                             </li>
                             <li class="filter-option">
-                                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" 
+                                <input class="filter-input filter-input-checkbox" type="checkbox" 
                                 name="dewalt" id="dewalt">
                                 <label for="dewalt">Dewalt</label>
                             </li>
                             <li class="filter-option">
-                                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" 
+                                <input class="filter-input filter-input-checkbox" type="checkbox" 
                                 name="hitachi" id="hitachi">
                                 <label for="hitachi">Hitachi</label>
                             </li>
@@ -93,12 +101,12 @@
                         <legend>Питание:</legend>
                         <ul>
                             <li class="filter-option">
-                                <input class="visually-hidden filter-input filter-input-radio" type="radio" 
+                                <input class="filter-input filter-input-radio" type="radio" 
                                 name="supply" id="battery" checked>
                                 <label for="battery">Аккумуляторные</label>
                             </li>
                             <li class="filter-option">
-                                <input class="visually-hidden filter-input filter-input-radio" type="radio" 
+                                <input class="filter-input filter-input-radio" type="radio" 
                                 name="supply" id="mains">
                                 <label for="mains">Сетевые</label>
                             </li>
@@ -124,8 +132,8 @@
                             </a>
                         </p>
                         <p class="catalog-item-cart">
-                            <a class="button catalog-item-cart" href="#">Купить</a>
-                            <button type="button" class="button catalog-item-bookmarks">В закладки</button>
+                            <a class="button item-in-cart" href="#">Купить</a>
+                            <button type="button" class="button item-in-bookmarks">В закладки</button>
                         </p>
                         <p class="catalog-item-price">
                             <span class="price-old">22500 Р.</span>
@@ -146,8 +154,8 @@
                             </a>
                         </p>
                         <p class="catalog-item-cart">
-                            <a class="button catalog-item-cart"  href="#">Купить</a>
-                            <button type="button" class="button catalog-item-bookmarks">В закладки</button>
+                            <a class="button item-in-cart"  href="#">Купить</a>
+                            <button type="button" class="button item-in-bookmarks">В закладки</button>
                         </p>
                         <p class="catalog-item-price">
                             <span class="price-old">30500 Р.</span>
@@ -168,8 +176,8 @@
                             </a>
                         </p>
                         <p class="catalog-item-cart">
-                            <a class="button catalog-item-cart"  href="#">Купить</a>
-                            <button type="button" class="button catalog-item-bookmarks">В закладки</button>
+                            <a class="button item-in-cart"  href="#">Купить</a>
+                            <button type="button" class="button item-in-bookmarks">В закладки</button>
                         </p>
                         <p class="catalog-item-price">
                             <span class="button price-current" href="#">12500 Р.</span>
@@ -189,8 +197,8 @@
                             </a>
                         </p>
                         <p class="catalog-item-cart">
-                            <a type="button" class="button catalog-item-cart" href="#">Купить</a>
-                            <button type="button" class="button catalog-item-bookmarks">В закладки</button>
+                            <a type="button" class="button item-in-cart" href="#">Купить</a>
+                            <button type="button" class="button item-in-bookmarks">В закладки</button>
                         </p>
                         <p class="catalog-item-price">
                             <span class="price-old">22500 Р.</span>
@@ -211,8 +219,8 @@
                             </a>
                         </p>
                         <p class="catalog-item-cart">
-                            <a class="button catalog-item-cart" href="#">Купить</a>
-                            <button type="button" class="button catalog-item-bookmarks">В закладки</button>
+                            <a class="button item-in-cart" href="#">Купить</a>
+                            <button type="button" class="button item-in-bookmarks">В закладки</button>
                         </p>
                         <p class="catalog-item-price">
                             <span class="price-old">30500 Р.</span>
@@ -233,8 +241,8 @@
                             </a>
                         </p>
                         <p class="catalog-item-cart">
-                            <a class="button catalog-item-cart" href="#">Купить</a>
-                            <button type="button" class="button catalog-item-bookmarks">В закладки</button>
+                            <a class="button item-in-cart" href="#">Купить</a>
+                            <button type="button" class="button item-in-bookmarks">В закладки</button>
                         </p>
                         <p class="catalog-item-price">
                             <span class="button price-current" href="#">12500 Р.</span>
@@ -254,8 +262,8 @@
                             </a>
                         </p>
                         <p class="catalog-item-cart">
-                            <a class="button catalog-item-cart" href="#">Купить</a>
-                            <button type="button" class="button catalog-item-bookmarks">В закладки</button>
+                            <a class="button item-in-cart" href="#">Купить</a>
+                            <button type="button" class="button item-in-bookmarks">В закладки</button>
                         </p>
                         <p class="catalog-item-price">
                             <span class="price-old">22500 Р.</span>
@@ -276,8 +284,8 @@
                             </a>
                         </p>
                         <p class="catalog-item-cart">
-                            <a class="button catalog-item-cart" href="#">Купить</a>
-                            <button type="button" class="button catalog-item-bookmarks">В закладки</button>
+                            <a class="button item-in-cart" href="#">Купить</a>
+                            <button type="button" class="button item-in-bookmarks">В закладки</button>
                         </p>
                         <p class="catalog-item-price">
                             <span class="price-old">30500 Р.</span>
@@ -298,8 +306,8 @@
                             </a>
                         </p>
                         <p class="catalog-item-cart">
-                            <a class="button catalog-item-cart" href="#">Купить</a>
-                            <button type="button" class="button catalog-item-bookmarks">В закладки</button>
+                            <a class="button item-in-cart" href="#">Купить</a>
+                            <button type="button" class="button item-in-bookmarks">В закладки</button>
                         </p>
                         <p class="catalog-item-price">
                             <span class="button price-current" href="#">12500 Р.</span>
@@ -310,7 +318,7 @@
         </main>
         <footer class="page-footer">
             <div class="page-footer-top">
-                <a class="footer-logo" href="index.html">Техномарт</a>
+                <a class="footer-logo no-underline" href="index.html">Техномарт</a>
                 <p class="footer-contacts">
                     г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
                     +7 (812) 555-05-55
@@ -335,14 +343,14 @@
             </p>
             <div class="footer-social">
                 <ul>
-                    <li><a class="social-button" href="#">Вконтакте</a></li>
-                    <li><a class="social-button" href="#">Фейсбук</a></li>
-                    <li><a class="social-button" href="#">Инстаграм</a></li>
+                    <li><a class="social-button no-underline" href="#">Вконтакте</a></li>
+                    <li><a class="social-button no-underline" href="#">Фейсбук</a></li>
+                    <li><a class="social-button no-underline" href="#">Инстаграм</a></li>
                 </ul>
             </div>
             <p class="footer-feedback">
                 <b>Обратная связь:</b>
-                <span class="feedback-email">mail@htmlacademy.ru</span>
+                <a class="feedback-email">mail@htmlacademy.ru</a>
             </p>
             <p class="footer-copyright">
                 <b>Разработано:</b>
