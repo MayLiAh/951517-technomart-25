@@ -783,3 +783,7 @@ a {
     background-color: #ffffff;
     border: none;
 }
+
+.modal {
+    display: none;
+}
