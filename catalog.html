@@ -54,9 +54,9 @@
                 <li class="breadcrumbs-current">Перфораторы</li>
             </ul>
             <section class="filters">
-                <h2 class="flter-name">Фильтр:</h2>
+                <h2 class="filter-name">Фильтр:</h2>
                 <form class="filter-form">
-                    <fieldset>
+                    <fieldset class="price-filter">
                         <legend>Цена:</legend>
                         <p class="range">
                         <input class="input-range" type="range" name="range" min="0" max="30000" step="100">
@@ -67,7 +67,7 @@
                         <input class="input-range-number" type="number" name="max-price" value="30000">
                         </p>
                     </fieldset>
-                    <fieldset>
+                    <fieldset class="producers-filter">
                         <legend>Производители:</legend>
                         <ul>
                             <li class="filter-option">
@@ -97,7 +97,7 @@
                             </li>
                         </ul>
                     </fieldset>
-                    <fieldset>
+                    <fieldset class="supply-filter">
                         <legend>Питание:</legend>
                         <ul>
                             <li class="filter-option">
@@ -112,6 +112,38 @@
                             </li>
                         </ul>
                     </fieldset>
+                    <fieldset class="sort-filter">
+                        <legend>Сортировка:</legend>
+                        <ul class="sort-type">
+                            <li class="sort-option">
+                                <input class="sort-input sort-input-radio visually-hidden" type="radio"
+                                name="sort-type" id="price" checked>
+                                <label for="price">По цене</label>
+                            </li>
+                            <li class="sort-option">
+                                <input class="sort-input sort-input-radio visually-hidden" type="radio"
+                                name="sort-type" id="type">
+                                <label for="type">По типу</label>
+                            </li>
+                            <li class="sort-option">
+                                <input class="sort-input sort-input-radio visually-hidden" type="radio"
+                                name="sort-type" id="functions">
+                                <label for="functions">По функционалу</label>
+                            </li>
+                        </ul>
+                        <ul class="order">
+                            <li class="order-option">
+                                <input class="asc-or-desc order-radio visually-hidden" type="radio"
+                                name="order-type" id="asc" checked>
+                                <label for="asc">По возрастанию</label>
+                            </li>
+                            <li class="order-option">
+                                <input class="asc-or-desc order-radio visually-hidden" type="radio"
+                                name="order-type" id="desc">
+                                <label for="desc">По убыванию</label>
+                            </li>
+                        </ul>
+                    </fieldset>
                     <button type="submit" class="button form-button-submit">Показать</button>
                 </form>
             </section>
@@ -120,7 +152,7 @@
                 <ul class="catalog-list">
                     <li class="catalog-item">
                         <h3>
-                            <a href="#">
+                            <a class="item-name" href="#">
                                 Перфоратор BOSCH
                                 BFG 3000
                             </a>
@@ -142,7 +174,7 @@
                     </li>
                     <li class="catalog-item">
                         <h3>
-                            <a href="#">
+                            <a class="item-name" href="#">
                                 Перфоратор BOSCH
                                 BFG 6000
                             </a>
@@ -164,7 +196,7 @@
                     </li>
                     <li class="catalog-item">
                         <h3>
-                            <a href="#">
+                            <a class="item-name" href="#">
                                 Перфоратор BOSCH
                                 BFG 2000
                             </a>
@@ -185,7 +217,7 @@
                     </li>
                     <li class="catalog-item">
                         <h3>
-                            <a href="#">
+                            <a class="item-name" href="#">
                                 Перфоратор BOSCH
                                 BFG 3000
                             </a>
@@ -207,7 +239,7 @@
                     </li>
                     <li class="catalog-item">
                         <h3>
-                            <a href="#">
+                            <a class="item-name" href="#">
                                 Перфоратор BOSCH
                                 BFG 6000
                             </a>
@@ -229,7 +261,7 @@
                     </li>
                     <li class="catalog-item">
                         <h3>
-                            <a href="#">
+                            <a class="item-name" href="#">
                                 Перфоратор BOSCH
                                 BFG 2000
                             </a>
@@ -250,7 +282,7 @@
                     </li>
                     <li class="catalog-item">
                         <h3>
-                            <a href="#">
+                            <a class="item-name" href="#">
                                 Перфоратор BOSCH
                                 BFG 3000
                             </a>
@@ -272,7 +304,7 @@
                     </li>
                     <li class="catalog-item">
                         <h3>
-                            <a href="#">
+                            <a class="item-name" href="#">
                                 Перфоратор BOSCH
                                 BFG 6000
                             </a>
@@ -294,7 +326,7 @@
                     </li>
                     <li class="catalog-item">
                         <h3>
-                            <a href="#">
+                            <a class="item-name" href="#">
                                 Перфоратор BOSCH
                                 BFG 2000
                             </a>
@@ -314,6 +346,20 @@
                         </p>
                     </li>
                 </ul>
+                <ul class="pagination">
+                    <li class="pagination-item pagination-item-current">1</li>
+                    <li class="pagination-item"><a href="#">2</a></li>
+                    <li class="pagination-item"><a href="#">3</a></li>
+                    <li class="pagination-item"><a href="#">Следующая</a></li>
+                </ul>
+            </section>
+            <section class="about-category">
+                <h2>Пара слов о перфораторах</h2>
+                <p>
+                    Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.
+                    Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В 
+                    ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.
+                </p>
             </section>
         </main>
         <footer class="page-footer">
@@ -357,7 +403,7 @@
                 <a class="button" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
             </p>
         </footer>
-        <section class="modal modal-item-in-cart visually-hidden">
+        <section class="modal modal-item-in-cart">
             <h3>Товар добавлен в корзину!</h3>
             <p>
                 <a class="button order" href="#">Оформить заказ</a>

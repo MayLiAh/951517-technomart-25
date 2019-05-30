@@ -22,6 +22,28 @@ a {
     display: none;
 }
 
+.button-red {
+    font-family: 'Cuprum', Arial, sans-serif;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    text-transform: uppercase;
+    background-color: #ff5357;
+}
+
+.button-red:visited {
+    color: #ffffff;
+}
+
+.button-red:hover {
+    background-color: #ca2c37;
+}
+
+.button-red:active {
+    background-color: #ba2732;
+}
+
 /* styles for header */
 .page-header {
     font-family: 'Cuprum', Arial, sans-serif;
@@ -204,6 +226,153 @@ a {
     background-color: #1d2739;
 }
 
+/* styles for goods-and-offers block */
+.goods-and-offers {
+    font-family: 'Cuprum', Arial, sans-serif;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    text-transform: uppercase;
+}
+
+.goods-and-offers .button:visited {
+    color: #ffffff;
+}
+
+.goods-categories,
+.offers {
+    list-style: none;
+}
+
+.categories-materials {
+    background-color: #ffbf47;
+}
+
+.categories-tools {
+    background-color: #3bbce3;
+}
+
+.categories-technics {
+    background-color: #dc91d8;
+}
+
+.offers-discount {
+    background-color: #8ed78f;
+}
+
+.offers-delivery {
+    background-color: #ffc047;
+}
+
+.goods-categories h3,
+.offers h3 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+    text-transform: none;
+}
+
+.slider h3 {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 36px;
+}
+
+.slider p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    text-transform: none;
+}
+
+.goods-categories-button,
+.offers-button {
+    background-color: rgba(0%, 0%, 0%, 0.1);
+}
+
+.goods-categories-button:hover,
+.offers-button:hover {
+    background-color: rgba(0%, 0%, 0%, 0.2);
+}
+
+.goods-categories-button:active,
+.offers-button:active {
+    background-color: rgba(0%, 0%, 0%, 0.3);
+}
+
+
+/* styles for catalog-popular and popular-producers blocks */
+.section-header {
+    font-family: 'Cuprum', Arial, sans-serif;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    text-transform: uppercase;
+    background-color: #f9f5f0;
+}
+
+.section-header h2 {
+    color: #32425c;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.catalog-popular ul,
+.popular-producers ul {
+    list-style: none;
+}
+
+.producers-item:hover {
+    box-shadow: 0 10px 25px rgba(41, 52, 73, 0.5);
+}
+
+.producers-item:active {
+    opacity: 0.3;
+    box-shadow: 0 4px 10px rgba(41, 52, 73, 0.5);
+}
+
+/* styles for servis-block */
+.servis h2 {
+    font-family: 'Cuprum', Arial, sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+
+.servis-slider label {
+    font-family: 'Cuprum', Arial, sans-serif;
+    color: #ffffff;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 30px;
+    box-shadow: 0 1px 0 #293449, inset 0 1px 0 #405069;
+    background-color: #32425c;
+}
+
+.servis-slider label:hover {
+    background-color: #293449;
+}
+
+.servis-radio-1:checked ~ label[for="servis-1"],
+.servis-radio-2:checked ~ label[for="servis-2"],
+.servis-radio-3:checked ~ label[for="servis-3"] {
+    color: #32425c;
+    box-shadow: 0 1px 0 #ffffff, inset 0 1px 0 #ffffff;
+    background-color: #ffffff;
+}
+
+.servis-slides h3 {
+    font-family: 'Cuprum', Arial, sans-serif;
+    color: #32425c;
+    font-size: 36px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
 /* styles for about-us block */
 .about-us h2 {
     font-family: 'Cuprum', Arial, sans-serif;
@@ -224,18 +393,7 @@ a {
     font-size: 18px;
     font-weight: 400;
     line-height: 20px;
-
     list-style: none;
-}
-
-.about-us .button {
-    color: #ffffff;
-    font-family: 'Cuprum', Arial, sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 18px;
-    text-transform: uppercase;
-    background-color: #ee3643;
 }
 
 /* styles for breadcrumbs */
@@ -266,6 +424,32 @@ a {
     font-weight: 700;
     line-height: 30px;
     text-transform: uppercase;
+}
+
+.sort-filter {
+    background-color: #f7f3ec;
+    border: none;
+}
+
+.sort-filter legend {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 18px;
+}
+
+.sort-option label {
+    color: #dbd8d1;
+    border-bottom: 1px dotted #ee3643; 
+}
+
+.sort-option label:hover {
+    color: #000000;
+    border-bottom: 1px solid #ee3643; 
+}
+
+.sort-input:checked + label {
+    border: none;
+    color: #ee3643;
 }
 
 .range,
@@ -313,13 +497,17 @@ a {
     border: 1px solid #e5e5e5;
 }
 
+.catalog-item:hover {
+    box-shadow: 0 10px 25px rgba(41, 52, 73, 0.5);
+}
+
 .catalog-item h3 {
     font-size: 18px;
     font-weight: 700;
     line-height: 20px;
 }
 
-.catalog-item a:first-of-type:visited {
+.catalog-item .item-name:visited {
     color: #000000;
 }
 
@@ -348,14 +536,14 @@ a {
     line-height: 18px;
 }
 
-.item-in-cart {
+.catalog-item-cart .item-in-cart {
     text-transform: uppercase;
     color: #ffffff;
     box-shadow: inset 0 -3px 0 #367315;
     background-color: #63a63e;
 }
 
-.item-in-cart a:visited {
+.catalog-item-cart .item-in-cart:visited {
     color: #ffffff;
 }
 
@@ -384,6 +572,44 @@ a {
     color: #32425c;
     border: 3px solid #32425c;
     opacity: 0.3;
+}
+
+/* styles for paginator */
+
+.pagination {
+    list-style: none;
+}
+
+.pagination-item a:visited {
+    color: #000000;
+}
+
+.pagination-item {
+    border: 1px solid #e5e5e5;
+    background-color: #ffffff;
+}
+
+.pagination-item:hover {
+    border: 1px solid #bdc6ca;
+}
+
+.pagination-item:active {
+    border: 1px solid #ee3643;
+}
+
+.pagination-item-current {
+    color: #ffffff;
+    background-color: #ee3643;
+}
+
+/* styles for about-category block */
+
+.about-category h2 {
+    font-family: 'Cuprum', Arial, sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 30px;
+    text-transform: uppercase;
 }
 
 /* styles for footer */
@@ -498,6 +724,16 @@ a {
     font-weight: 400;
     border: 2px solid #dee3e4;
     background-color: #ffffff;
+}
+
+.modal-write-us input:hover,
+.modal-write-us textarea:hover {
+    border: 2px solid #b5b5b5;
+}
+
+.modal-write-us input:focus,
+.modal-write-us textarea:focus {
+    border: 2px solid #ee3643;
 }
 
 .write-us-submit {
