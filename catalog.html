@@ -61,7 +61,7 @@
                 <h2>Перфораторы</h2>
                 <div class="catalog-columns">
                     <section class="filters">
-                        <h3 class="filter-name">Фильтр:</h2>
+                        <h3 class="filter-name">Фильтр:</h3>
                         <form class="filter-form">
                             <fieldset class="price-filter">
                                 <legend>Цена:</legend>
@@ -70,7 +70,7 @@
                                 </p>
                                 <p class="min-max-price">
                                     <input class="input-range-number" type="number" name="min-price" value="0">
-                                    -
+                                    <span>—</span>
                                     <input class="input-range-number" type="number" name="max-price" value="30000">
                                 </p>
                             </fieldset>
@@ -120,6 +120,7 @@
                                 </ul>
                             </fieldset>
                             <fieldset class="sort-filter">
+                                <div class="sort-filter-inner">
                                 <legend>Сортировка:</legend>
                                 <ul class="sort-type">
                                     <li class="sort-option">
@@ -150,6 +151,7 @@
                                         <label for="desc">По убыванию</label>
                                     </li>
                                 </ul>
+                                </div>
                             </fieldset>
                             <button type="submit" class="button form-button-submit">Показать</button>
                         </form>
@@ -360,8 +362,7 @@
                         </ul>
                     </section> 
                 </div>
-            </div>
-            
+            </div>           
             <section class="about-category">
                 <h2>Пара слов о перфораторах</h2>
                 <p>
@@ -419,12 +420,14 @@
             </div>
         </footer>
         <section class="modal modal-item-in-cart">
-            <h3>Товар добавлен в корзину!</h3>
-            <p>
-                <a class="button order" href="#">Оформить заказ</a>
-                <button class="button return-to-catalog" type="button">Продолжить покупки</button>
-            </p>
-            <button type="button" class="button modal-close">Закрыть</button>
+            <div class="modal-in-cart-container">
+                <h3>Товар добавлен в корзину!</h3>
+                <p>
+                    <a class="button-red order-button" href="#">Оформить заказ</a>
+                    <button class="button return-to-catalog" type="button">Продолжить покупки</button>
+                </p>
+                <button type="button" class="button modal-close visually-hidden">Закрыть</button>
+            </div>
         </section>
     </body>
 </html>

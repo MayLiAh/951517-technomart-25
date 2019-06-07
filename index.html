@@ -62,23 +62,27 @@
                     </li>
                 </ul>
                 <section class="slider">
-                    <input type="radio" class="slider-radio-1 visually-hidden" id="slide-1" name="slide">
-                    <input type="radio" class="slider-radio-2 visually-hidden" id="slide-2" name="slide" checked>
+                    <input type="radio" class="slider-btn-1" id="slide-1" name="slide">
+                    <input type="radio" class="slider-btn-2" id="slide-2" name="slide" checked>
                     <div class="slider-controls">
-                            <label for="slide-1"></label>
-                            <label for="slide-2"></label>
+                            <label for="slide-1">Первый слайд</label>
+                            <label for="slide-2">Второй слайд</label>
                     </div>
                     <div class="slider-inner">
                         <div class="slider-slides">
-                            <div class="slide-1">
-                                <h3>Перфораторы</h3>
-                                <p>Настоящие мужские игрушки</p>
-                                <img src="img/slide-1.jpg" width="620" height="266" alt="Перфораторы - настоящие мужские игрушки">
-                            </div>
-                            <div class="slide-2">
-                                <h3>Дрели</h3>
-                                <p>Соседям на радость</p>
+                            <div class="slider-slide slide-1">
+                                <div class="slide-description">
+                                    <h3>Перфораторы</h3>
+                                    <p>Настоящие мужские игрушки</p>
+                                </div>
                                 <img src="img/slide-2.jpg" width="620" height="266" alt="Дрели - соседям на радость">
+                            </div>
+                            <div class="slider-slide slide-2">
+                                <div class="slide-description">
+                                    <h3>Дрели</h3>
+                                    <p>Соседям на радость</p>
+                                </div>
+                                <img src="img/slide-1.jpg" width="620" height="266" alt="Перфораторы - настоящие мужские игрушки">
                             </div>
                         </div>
                     </div>
@@ -245,35 +249,42 @@
                     Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
                 </p>
                 <section class="servis-slider">
-                    <input type="radio" class="servis-radio-1 visually-hidden" id="servis-1" name="servis" checked>
-                    <label for="servis-1">Доставка</label>
-                    <input type="radio" class="servis-radio-2 visually-hidden" id="servis-2" name="servis">
-                    <label for="servis-2">Гарантия</label>
-                    <input type="radio" class="servis-radio-3 visually-hidden" id="servis-3" name="servis">
-                    <label for="servis-3">Кредит</label>
+                    <input type="radio" class="servis-btn-1 visually-hidden" id="servis-btn-1" name="servis" checked>
+                    <input type="radio" class="servis-btn-2 visually-hidden" id="servis-btn-2" name="servis">
+                    <input type="radio" class="servis-btn-3 visually-hidden" id="servis-btn-3" name="servis">
+                    <div class="servis-controls">
+                        <label class="servis-control-1" for="servis-btn-1">Доставка</label>
+                        <label for="servis-btn-2">Гарантия</label>
+                        <label for="servis-btn-3">Кредит</label>
+                    </div>
                     <div class="servis-inner">
                         <div class="servis-slides">
-                            <div class="slide-1">
+                            <div class="servis-slide slide-1">
                                 <h3>Доставка</h3>
-                                <p>Мы с удовольствием доставим ваш товар прямо 
-                                   к вашему подъезду совершенно бесплатно!
-                                   Ведь мы неплохо заработаем, 
-                                   поднимая его на ваш этаж!
+                                <p>
+                                    Мы с удовольствием доставим ваш товар прямо<br>
+                                    к вашему подъезду совершенно бесплатно!<br>
+                                    Ведь мы неплохо заработаем,<br> 
+                                    поднимая его на ваш этаж!
                                 </p>
                             </div>
-                            <div class="slide-2">
+                            <div class="servis-slide slide-2">
                                 <h3>Гарантия</h3>
-                                <p>Если купленный у нас товар поломается или заискрит, 
-                                   а также в случае пожара, спровоцированного его возгаранием,  вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. 
-                                   Дом уж восстановите как-нибудь сами.
+                                <p>
+                                    Если купленный у нас товар поломается или заискрит,<br>
+                                    а также в случае пожара, спровоцированного его возгаранием,<br>
+                                    вы всегда можете быть уверены в нашей гарантии. Мы обменяем<br>
+                                    сгоревший товар на новый.<br>
+                                    Дом уж восстановите как-нибудь сами.
                                 </p>
                             </div>
-                            <div class="slide-3">
-                                <h3>Кредит</h3>
-                                <p>Залезть в долговую яму стало проще! 
-                                   Кредитные консультанты придут вам на помощь.
+                            <div class="servis-slide slide-3">
+                                    <h3>Кредит</h3>
+                                <p>
+                                    Залезть в долговую яму стало проще!<br>
+                                    Кредитные консультанты придут вам на помощь.
                                 </p>
-                                <a class="button-red credit-button" href="">Отправить заявку</a>
+                                <a class="button-red credit-button" href="#">Отправить заявку</a>
                             </div>
                         </div>
                     </div>
@@ -353,36 +364,42 @@
             </div>
         </footer>
         <section class="modal modal-map-full">
-            <h2 class="visually-hidden">Как до нас добраться</h2>
-            <p>
-                <img src="img/map-full.jpg" width="940" height="447" alt="Офис находится по адресу ул. Б. Конюшенная, д. 19/8 Санкт-Петербург">
-            </p>
-            <button type="button" class="button modal-close">Закрыть</button>
+            <div class="modal-map-container">
+                <h2 class="visually-hidden">Как до нас добраться</h2>
+                <p>
+                    <img src="img/map-full.jpg" width="940" height="447" alt="Офис находится по адресу ул. Б. Конюшенная, д. 19/8 Санкт-Петербург">
+                </p>
+                <button type="button" class="button modal-close visually-hidden">Закрыть</button>
+            </div>
         </section>
         <section class="modal modal-write-us">
-            <h2 class="visually-hidden">Обратная связь</h2>
-            <form class="write-us" action="#" method="POST">
-                <p>
-                    <label for="name">Ваше имя:</label>
-                    <input type="text" id="name" name="name" placeholder="Имя Фамилия">
-                </p>
-                <p>
-                    <label for="email">Ваш e-mail:</label>
-                    <input type="email" id="email" name="email" placeholder="email@example.com">
-                </p>
-                <p>
-                    <label for="message-text">
-                        Текст письма:
-                        <textarea id="message-text" name="message-text">
-                            В свободной форме
-                        </textarea>
-                    </label>
-                </p>
-                <div class="write-us-submit">
-                <button type="submit" class="button write-us-button">Отправить</button>
-                </div>
-            </form>
-            <button type="button" class="button modal-close">Закрыть</button>
+            <div class="modal-write-container">
+                <h2 class="visually-hidden">Обратная связь</h2>
+                <form class="write-us-form" action="#" method="POST">
+                    <div class="write-us-form-container">
+                        <p>
+                            <label for="name">Ваше имя:</label>
+                            <input type="text" id="name" name="name" placeholder="Имя Фамилия">
+                        </p>
+                        <p>
+                            <label for="email">Ваш e-mail:</label>
+                            <input type="email" id="email" name="email" placeholder="email@example.com">
+                        </p>
+                        <p class="write-us-message">
+                            <label for="message-text">
+                                Текст письма:
+                                <textarea id="message-text" name="message-text">
+                                    В свободной форме
+                                </textarea>
+                            </label>
+                        </p>
+                    </div>
+                    <div class="write-us-submit">
+                        <button type="submit" class="button-red write-us-button">Отправить</button>
+                    </div>
+                </form>
+                <button type="button" class="button modal-close visually-hidden">Закрыть</button>
+            </div>
         </section>
     </body>
 </html>
