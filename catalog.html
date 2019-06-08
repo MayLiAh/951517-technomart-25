@@ -13,9 +13,11 @@
             <div class="page-header-top">
                 <div class="header-top-inner">
                     <a class="header-logo" href="index.html">Техномарт</a>
-                    <input type="search" name="search" class="header-search" placeholder="Поиск:">
+                    <div class="search-input">
+                        <input type="search" name="search" class="header-search" placeholder="Поиск:">
+                    </div>
                     <a class="header-bookmarks" href="#">Закладки: 0</a>
-                    <a class="header-cart cart-not-empty" href="#">Корзина: 10</a>
+                    <a class="header-cart not-empty" href="#">Корзина: 10</a>
                     <a class="header-order" href="#">Оформить заказ</a>
                 </div>
             </div>
@@ -30,7 +32,7 @@
                 <section class="header-user">
                     <p class="user-name">
                         <a class="name" href="#">Равшан Джамшутович</a>
-                        <button class="user-logaut-link visually-hidden">Выход</button>
+                        <a class="user-logaut-link">Выход</a>
                     </p>
                 <ul class="user-navigation-login">    
                     <li><a class="user-orders" href="#">Мои заказы</a></li>
@@ -52,7 +54,7 @@
         </header>
         <main class="container">
             <ul class="breadcrumbs">
-                <li><a href="index.html">Главная</a></li>
+                <li><a class="index-link" href="index.html">Главная</a></li>
                 <li><a href="#">Каталог</a></li>
                 <li><a href="#">Инструмент</a></li>
                 <li class="breadcrumbs-current">Перфораторы</li>
@@ -78,27 +80,27 @@
                                 <legend>Производители:</legend>
                                 <ul>
                                     <li class="filter-option">
-                                        <input class="filter-input filter-input-checkbox" type="checkbox" 
+                                        <input class="filter-input filter-input-checkbox visually-hidden" type="checkbox" 
                                         name="bosh" id="bosh" checked>
                                         <label for="bosh">Bosh</label>
                                     </li>
                                     <li class="filter-option">
-                                        <input class="filter-input filter-input-checkbox" type="checkbox" 
+                                        <input class="filter-input filter-input-checkbox visually-hidden" type="checkbox" 
                                         name="interskol" id="interskol">
                                         <label for="interskol">Интерскол</label>
                                     </li>
                                     <li class="filter-option">
-                                        <input class="filter-input filter-input-checkbox" type="checkbox" 
+                                        <input class="filter-input filter-input-checkbox visually-hidden" type="checkbox" 
                                         name="makita" id="makita" checked>
                                         <label for="makita">Makita</label>
                                     </li>
                                     <li class="filter-option">
-                                        <input class="filter-input filter-input-checkbox" type="checkbox" 
+                                        <input class="filter-input filter-input-checkbox visually-hidden" type="checkbox" 
                                         name="dewalt" id="dewalt">
                                         <label for="dewalt">Dewalt</label>
                                     </li>
                                     <li class="filter-option">
-                                        <input class="filter-input filter-input-checkbox" type="checkbox" 
+                                        <input class="filter-input filter-input-checkbox visually-hidden" type="checkbox" 
                                         name="hitachi" id="hitachi">
                                        <label for="hitachi">Hitachi</label>
                                     </li>
@@ -108,12 +110,12 @@
                                 <legend>Питание:</legend>
                                 <ul>
                                     <li class="filter-option">
-                                        <input class="filter-input filter-input-radio" type="radio" 
+                                        <input class="filter-input filter-input-radio visually-hidden" type="radio" 
                                         name="supply" id="battery" checked>
                                         <label for="battery">Аккумуляторные</label>
                                     </li>
                                     <li class="filter-option">
-                                        <input class="filter-input filter-input-radio" type="radio" 
+                                        <input class="filter-input filter-input-radio visually-hidden" type="radio" 
                                         name="supply" id="mains">
                                         <label for="mains">Сетевые</label>
                                     </li>
@@ -426,7 +428,7 @@
                     <a class="button-red order-button" href="#">Оформить заказ</a>
                     <button class="button return-to-catalog" type="button">Продолжить покупки</button>
                 </p>
-                <button type="button" class="button modal-close visually-hidden">Закрыть</button>
+                <button type="button" class="button modal-close">Закрыть</button>
             </div>
         </section>
     </body>
