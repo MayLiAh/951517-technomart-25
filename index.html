@@ -6,7 +6,7 @@
         <link href="css/normalize.css" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&display=swap&subset=cyrillic" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
     </head>
     <body>
         <header class="page-header">
@@ -46,11 +46,11 @@
                 </ul>
             </nav>
         </header>
-        <main class="container">
-            <div class="goods-and-offers">
+        <main>
+            <div class="goods-and-offers container">
                 <h2 class="visually-hidden">Товары и предложения</h2>
                 <ul class="goods-categories">
-                    <li class="goods-categories-item categories-materials">
+                    <li class="goods-categories-item categories-materials new">
                         <h3>Материалы</h3>
                         <a class="button goods-categories-button" href="#">На любой вкус</a>
                     </li>
@@ -64,8 +64,8 @@
                     </li>
                 </ul>
                 <section class="slider">
-                    <input type="radio" class="slider-btn-1" id="slide-1" name="slide">
-                    <input type="radio" class="slider-btn-2" id="slide-2" name="slide" checked>
+                    <input type="radio" class="goods-slider-radio slider-btn-1 visually-hidden" id="slide-1" name="slide">
+                    <input type="radio" class="goods-slider-radio slider-btn-2 visually-hidden" id="slide-2" name="slide" checked>
                     <div class="slider-controls">
                             <label for="slide-1">Первый слайд</label>
                             <label for="slide-2">Второй слайд</label>
@@ -77,14 +77,12 @@
                                     <h3>Перфораторы</h3>
                                     <p>Настоящие мужские игрушки</p>
                                 </div>
-                                <img src="img/slide-2.jpg" width="620" height="266" alt="Дрели - соседям на радость">
                             </div>
                             <div class="slider-slide slide-2">
                                 <div class="slide-description">
                                     <h3>Дрели</h3>
                                     <p>Соседям на радость</p>
                                 </div>
-                                <img src="img/slide-1.jpg" width="620" height="266" alt="Перфораторы - настоящие мужские игрушки">
                             </div>
                         </div>
                     </div>
@@ -101,7 +99,7 @@
                     </li>
                 </ul>
             </div>
-            <section class="catalog-popular">
+            <section class="catalog-popular container">
                 <div class="section-header">
                     <h2>Популярные товары:</h2>
                     <a class="button-red catalog-popular-button" href="#">Все популярные товары</a>
@@ -115,7 +113,7 @@
                             </a>
                         </h3>
                         <p class="catalog-item-image">
-                            <a href="#">
+                            <a class="item-img-link" href="#">
                                 <img src="img/Perforator_9000.jpg" width="218" height="170" alt="Перфоратор BOSCH
                                 BFG 9000">
                             </a>
@@ -137,7 +135,7 @@
                             </a>
                         </h3>
                         <p class="catalog-item-image">
-                            <a href="#">
+                            <a class="item-img-link" href="#">
                                 <img src="img/Perforator_3000.jpg" width="218" height="170" alt="Перфоратор BOSCH
                                 BFG 3000">
                             </a>
@@ -159,7 +157,7 @@
                             </a>
                         </h3>
                         <p class="catalog-item-image">
-                            <a href="#">
+                            <a class="item-img-link" href="#">
                                 <img src="img/Perforator_6000.jpg" width="218" height="170" alt="Перфоратор BOSCH
                             BFG 6000">
                             </a>
@@ -173,7 +171,7 @@
                             <span class="button price-current">25500 Р.</span>
                         </p>
                     </li>
-                    <li class="catalog-item">
+                    <li class="catalog-item new">
                         <h3>
                             <a class="item-name" href="#">
                                 Перфоратор BOSCH
@@ -181,7 +179,7 @@
                             </a>
                         </h3>
                         <p class="catalog-item-image">
-                            <a href="#">
+                            <a class="item-img-link" href="#">
                                 <img src="img/Perforator_2000.jpg" width="218" height="170" alt="Перфоратор BOSCH
                                 BFG 2000">
                             </a>
@@ -196,7 +194,7 @@
                     </li>
                 </ul>
             </section>
-            <section class="popular-producers">
+            <section class="popular-producers container">
                 <div class="section-header">
                     <h2>Популярные производители:</h2>
                     <a class="button-red catalog-popular-button" href="#">Все производители</a>
@@ -245,54 +243,56 @@
                 </ul>
             </section>
             <section class="servis">
-                <h2>Сервисы</h2>
-                <p class="good-shop">
-                    Хороший интернет-магазин отличается от плохого не только ценами!
-                    Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
-                </p>
-                <section class="servis-slider">
-                    <input type="radio" class="servis-btn-1 visually-hidden" id="servis-btn-1" name="servis" checked>
-                    <input type="radio" class="servis-btn-2 visually-hidden" id="servis-btn-2" name="servis">
-                    <input type="radio" class="servis-btn-3 visually-hidden" id="servis-btn-3" name="servis">
-                    <div class="servis-controls">
-                        <label class="servis-control-1" for="servis-btn-1">Доставка</label>
-                        <label for="servis-btn-2">Гарантия</label>
-                        <label for="servis-btn-3">Кредит</label>
-                    </div>
-                    <div class="servis-inner">
-                        <div class="servis-slides">
-                            <div class="servis-slide slide-1">
-                                <h3>Доставка</h3>
-                                <p>
-                                    Мы с удовольствием доставим ваш товар прямо<br>
-                                    к вашему подъезду совершенно бесплатно!<br>
-                                    Ведь мы неплохо заработаем,<br> 
-                                    поднимая его на ваш этаж!
-                                </p>
-                            </div>
-                            <div class="servis-slide slide-2">
-                                <h3>Гарантия</h3>
-                                <p>
-                                    Если купленный у нас товар поломается или заискрит,<br>
-                                    а также в случае пожара, спровоцированного его возгаранием,<br>
-                                    вы всегда можете быть уверены в нашей гарантии. Мы обменяем<br>
-                                    сгоревший товар на новый.<br>
-                                    Дом уж восстановите как-нибудь сами.
-                                </p>
-                            </div>
-                            <div class="servis-slide slide-3">
-                                    <h3>Кредит</h3>
-                                <p>
-                                    Залезть в долговую яму стало проще!<br>
-                                    Кредитные консультанты придут вам на помощь.
-                                </p>
-                                <a class="button-red credit-button" href="#">Отправить заявку</a>
+                <div class="servis-container">
+                    <h2>Сервисы</h2>
+                    <p class="good-shop">
+                        Хороший интернет-магазин отличается от плохого не только ценами!
+                        Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
+                    </p>
+                    <section class="servis-slider">
+                        <input type="radio" class="servis-btn-1 visually-hidden" id="servis-btn-1" name="servis" checked>
+                        <input type="radio" class="servis-btn-2 visually-hidden" id="servis-btn-2" name="servis">
+                        <input type="radio" class="servis-btn-3 visually-hidden" id="servis-btn-3" name="servis">
+                        <div class="servis-controls">
+                            <label class="servis-control-1" for="servis-btn-1">Доставка</label>
+                            <label for="servis-btn-2">Гарантия</label>
+                            <label for="servis-btn-3">Кредит</label>
+                        </div>
+                        <div class="servis-inner">
+                            <div class="servis-slides">
+                                <div class="servis-slide slide-1">
+                                    <h3>Доставка</h3>
+                                    <p>
+                                        Мы с удовольствием доставим ваш товар прямо<br>
+                                        к вашему подъезду совершенно бесплатно!<br>
+                                        Ведь мы неплохо заработаем,<br> 
+                                        поднимая его на ваш этаж!
+                                    </p>
+                                </div>
+                                <div class="servis-slide slide-2">
+                                    <h3>Гарантия</h3>
+                                    <p>
+                                        Если купленный у нас товар поломается или заискрит,<br>
+                                        а также в случае пожара, спровоцированного его возгаранием,<br>
+                                        вы всегда можете быть уверены в нашей гарантии. Мы обменяем<br>
+                                        сгоревший товар на новый.<br>
+                                        Дом уж восстановите как-нибудь сами.
+                                    </p>
+                                </div>
+                                <div class="servis-slide slide-3">
+                                        <h3>Кредит</h3>
+                                    <p>
+                                        Залезть в долговую яму стало проще!<br>
+                                        Кредитные консультанты придут вам на помощь.
+                                    </p>
+                                    <a class="button-red credit-button" href="#">Отправить заявку</a>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </section>
+                    </section>
+                </div>
             </section>
-            <div class="about-us">
+            <div class="about-us container">
                 <section class="about-company">
                     <h2>Компания «Техномарт»</h2>
                     <p>Настоящий мужской шоппинг начинается здесь! 
