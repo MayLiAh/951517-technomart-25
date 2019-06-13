@@ -2625,10 +2625,10 @@ img {
         opacity: 1;
     }
 
-    .header-top-inner .search-input:focus-within::before,
-    .header-top-inner .search-input:focus-within:before {
+    .header-top-inner .header-search:focus{
         background-image: url("../img/icon-search-focus.png");
-        opacity: 1;
+        background-position: 17px 12px;
+        background-repeat: no-repeat;
     }
 
     .order-option label::before,
@@ -2640,7 +2640,7 @@ img {
         background-position: 50% 50%;
         background-repeat: no-repeat;
         cursor: pointer;
-        opacity: 0.3;
+        opacity: 0.4;
     }
 
     .order-option label[for="asc"]::before,
@@ -2667,6 +2667,7 @@ img {
     .order-radio-asc:active + label::before,
     .order-radio-asc:active + label:before {
         background-image: url("../img/icon-up-dir.png");
+        opacity: 1;
     }
 
     .order-radio-desc:checked + label::before,
@@ -2674,5 +2675,6 @@ img {
     .order-radio-desc:active + label::before,
     .order-radio-desc:active + label:before {
         background-image: url("../img/icon-down-dir.png");
+        opacity: 1;
     }
 }
