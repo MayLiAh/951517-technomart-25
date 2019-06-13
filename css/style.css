@@ -2609,26 +2609,22 @@ img {
     .header-top-inner .search-input::before,
     .header-top-inner .search-input:before {
         content: "";
-        width: 17px;
-        height: 17px;
-        position: absolute;
-        top: 12px;
-        left: 17px;
-        background-image: url("../img/icon-search.png");
-        background-position: 50% 50%;
-        background-repeat: no-repeat;
-        opacity: 0.3;
+        width: 0;
+        height: 0;
     }
 
-    .header-top-inner .search-input:hover::before,
-    .header-top-inner .search-input:hover:before {
-        opacity: 1;
+    .header-top-inner .header-search {
+        background-image: url("../img/icon-search.png");
+        background-position: 17px 12px;
+        background-repeat: no-repeat;
+    }
+
+    .header-top-inner .header-search:hover {
+        background-image: url("../img/icon-search-active.png");
     }
 
     .header-top-inner .header-search:focus{
         background-image: url("../img/icon-search-focus.png");
-        background-position: 17px 12px;
-        background-repeat: no-repeat;
     }
 
     .order-option label::before,
