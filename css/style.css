@@ -2604,3 +2604,75 @@ img {
     background-color: #ffffff;
     border: none;
 }
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    .header-top-inner .search-input::before,
+    .header-top-inner .search-input:before {
+        content: "";
+        width: 17px;
+        height: 17px;
+        position: absolute;
+        top: 12px;
+        left: 17px;
+        background-image: url("../img/icon-search.png");
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        opacity: 0.3;
+    }
+
+    .header-top-inner .search-input:hover::before,
+    .header-top-inner .search-input:hover:before {
+        opacity: 1;
+    }
+
+    .header-top-inner .search-input:focus-within::before,
+    .header-top-inner .search-input:focus-within:before {
+        background-image: url("../img/icon-search-focus.png");
+        opacity: 1;
+    }
+
+    .order-option label::before,
+    .order-option label:before {
+        content: "";
+        width: 10px;
+        height: 11px;
+        position: absolute;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        cursor: pointer;
+        opacity: 0.3;
+    }
+
+    .order-option label[for="asc"]::before,
+    .order-option label[for="asc"]:before {
+        top: -4px;
+        left: -3px;
+        background-image: url("../img/icon-up-dir-black.png");
+    }
+
+    .order-option label[for="desc"]::before,
+    .order-option label[for="desc"]:before {
+        top: -4px;
+        left: 29px;
+        background-image: url("../img/icon-down-dir-black.png");
+    }
+
+    .order-radio:hover + label::before,
+    .order-radio:hover + label:before {
+        opacity: 1;
+    }
+
+    .order-radio-asc:checked + label::before,
+    .order-radio-asc:checked + label:before,
+    .order-radio-asc:active + label::before,
+    .order-radio-asc:active + label:before {
+        background-image: url("../img/icon-up-dir.png");
+    }
+
+    .order-radio-desc:checked + label::before,
+    .order-radio-desc:checked + label:before,
+    .order-radio-desc:active + label::before,
+    .order-radio-desc:active + label:before {
+        background-image: url("../img/icon-down-dir.png");
+    }
+}
