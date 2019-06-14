@@ -1,3 +1,5 @@
+alert(navigator.appName);
+
 const mapButton = document.querySelector('.contacts-map');
 const mapModal = document.querySelector('.modal-map-full');
 const closeMapModalButton = document.querySelector('.modal-close-map');
