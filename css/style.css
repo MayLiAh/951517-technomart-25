@@ -2727,20 +2727,6 @@ img {
         opacity: 0.3;
     }
 
-    .order-option label[for="asc"]::before,
-    .order-option label[for="asc"]:before {
-        top: -4px;
-        left: -3px;
-        background-image: url("../img/icon-up-dir-black.png");
-    }
-
-    .order-option label[for="desc"]::before,
-    .order-option label[for="desc"]:before {
-        top: -4px;
-        left: 29px;
-        background-image: url("../img/icon-down-dir-black.png");
-    }
-
     .order-radio:hover + label::before,
     .order-radio:hover + label:before {
         opacity: 1;
@@ -2756,5 +2742,19 @@ img {
     .order-radio-desc:checked ~ label[for="desc"]:before {
         background-image: url("../img/icon-down-dir.png");
         opacity: 1;
+    }
+
+    .order-option label[for="asc"]::before,
+    .order-option label[for="asc"]:before {
+        top: -4px;
+        left: -3px;
+        background-image: url("../img/icon-up-dir-black.png");
+    }
+
+    .order-option label[for="desc"]::before,
+    .order-option label[for="desc"]:before {
+        top: -4px;
+        left: 29px;
+        background-image: url("../img/icon-down-dir-black.png");
     }
 }
