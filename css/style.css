@@ -2727,23 +2727,6 @@ img {
         opacity: 0.3;
     }
 
-    .order-radio:hover + label::before,
-    .order-radio:hover + label:before {
-        opacity: 1;
-    }
-
-    .order-radio-asc:checked ~ label[for="asc"]::before,
-    .order-radio-asc:checked ~ label[for="asc"]:before {
-        background-image: url("../img/icon-up-dir.png");
-        opacity: 1;
-    }
-
-    .order-radio-desc:checked ~ label[for="desc"]::before,
-    .order-radio-desc:checked ~ label[for="desc"]:before {
-        background-image: url("../img/icon-down-dir.png");
-        opacity: 1;
-    }
-
     .order-option label[for="asc"]::before,
     .order-option label[for="asc"]:before {
         top: -4px;
@@ -2756,5 +2739,22 @@ img {
         top: -4px;
         left: 29px;
         background-image: url("../img/icon-down-dir-black.png");
+    }
+
+    .order-radio:hover + label::before,
+    .order-radio:hover + label:before {
+        opacity: 1;
+    }
+
+    .order-radio-asc:checked + label::before,
+    .order-radio-asc:checked + label:before {
+        background-image: url("../img/icon-up-dir.png");
+        opacity: 1;
+    }
+
+    .order-radio-desc:checked + label::before,
+    .order-radio-desc:checked + label:before {
+        background-image: url("../img/icon-down-dir.png");
+        opacity: 1;
     }
 }
