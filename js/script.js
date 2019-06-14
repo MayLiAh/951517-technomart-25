@@ -20,7 +20,8 @@ function getInternetExplorerVersion()
 
 alert(getInternetExplorerVersion());
 
-const mapButton = document.querySelector('.contacts-map');
+if (getInternetExplorerVersion() === -1) {
+  const mapButton = document.querySelector('.contacts-map');
 const mapModal = document.querySelector('.modal-map-full');
 const closeMapModalButton = document.querySelector('.modal-close-map');
 
@@ -93,4 +94,5 @@ document.addEventListener("keydown", function (event) {
       }
     });
   }
-});
+});  
+}
