@@ -1793,6 +1793,7 @@ img {
             align-items: center;
     width: 700px;
     height: 38px;
+    padding-top: 5px; 
     padding-left: 23px;
     padding-right: 17px; 
     position: relative;
