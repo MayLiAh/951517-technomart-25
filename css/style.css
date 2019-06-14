@@ -2472,6 +2472,7 @@ img {
     background-image: url("../img/close-popup.svg");
     background-position: 50% 50%;
     background-repeat: no-repeat;
+    z-index: 10;
 }
 
 /* map modal window */
@@ -2500,10 +2501,6 @@ img {
     top: 0;
     left: 0;
     z-index: 3;
-}
-
-.modal-cloze-map {
-    z-index: 10;
 }
 
 /* write-us modal window */
@@ -2727,7 +2724,7 @@ img {
         background-position: 50% 50%;
         background-repeat: no-repeat;
         cursor: pointer;
-        opacity: 0.4;
+        opacity: 0.3;
     }
 
     .order-option label[for="asc"]::before,
