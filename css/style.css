@@ -2751,8 +2751,8 @@ img {
         background-image: url("../img/icon-up-dir-black.png");
     }
 
-    .order-radio-desc .label-desc::before,
-    .order-radio-desc .label-desc:before {
+    .order-radio-desc ~ .label-desc::before,
+    .order-radio-desc ~ .label-desc:before {
         top: -4px;
         left: 29px;
         background-image: url("../img/icon-down-dir-black.png");
