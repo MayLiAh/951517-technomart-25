@@ -2738,15 +2738,11 @@ img {
 
     .order-radio-asc ~ .label-asc::before,
     .order-radio-asc ~ .label-asc:before {
-        top: -4px;
-        left: -3px;
         background-image: url("../img/icon-up-dir-black.png");
     }
 
-    .order-radio-desc:not(:checked) ~ .label-desc::before,
-    .order-radio-desc:not(:checked) ~ .label-desc:before {
-        top: -4px;
-        left: 29px;
+    .order-radio-desc ~ .label-desc::before,
+    .order-radio-desc ~ .label-desc:before {
         background-image: url("../img/icon-down-dir-black.png");
     }
 
