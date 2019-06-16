@@ -2719,8 +2719,10 @@ img {
     }
 
     /* styles for order-sort radio-inputs */
-    .order-option label::before,
-    .order-option label:before {
+    .order-option .label-ask::before,
+    .order-option .label-ask:before,
+    .order-option .label-desk::before,
+    .order-option .label-desk:before {
         opacity: 0.3;
     }
 
@@ -2746,8 +2748,10 @@ img {
         background-image: url("../img/icon-down-dir-black.png");
     }
 
-    .order-radio:hover + label::before,
-    .order-radio:hover + label:before {
+    .order-radio-ask:hover ~ .label-ask::before,
+    .order-radio-ask:hover ~ .label-ask:before,
+    .order-radio-desk:hover ~ .label-desk::before,
+    .order-radio-desk:hover ~ .label-desk:before {
         opacity: 1;
     }
 }
