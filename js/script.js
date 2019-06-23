@@ -9,7 +9,7 @@ mapButton.addEventListener('click', (event) => {
   }  
 });
 
-const writeUsButtom = document.querySelector('.contacts-write-us');
+const writeUsButton = document.querySelector('.contacts-write-us');
 const writeUsModal = document.querySelector('.modal-write-us');
 const closeWriteUsModalButton = document.querySelector('.modal-close-write');
 
@@ -20,11 +20,12 @@ const email = writeUsForm.querySelector('.email');
 const message = writeUsForm.querySelector('.message-text');
 const writeUsFormSubmit = writeUsForm.querySelector('.write-us-button');
 
-writeUsButtom.addEventListener('click', (event) => {
+writeUsButton.addEventListener('click', (event) => {
   event.preventDefault();
   if (!writeUsModal.classList.contains('modal-show')) {
     writeUsModal.classList.add('modal-show');
-  }  
+  }
+  name.focus();
 });
 
 writeUsFormSubmit.addEventListener('click', (event) => {
