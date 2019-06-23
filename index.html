@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <title>Техномарт: главная</title>
         <link href="css/normalize.css" rel="stylesheet">
-        <link href="css/style.min.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&display=swap&subset=cyrillic" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
     </head>
@@ -15,7 +15,7 @@
                     <a class="header-logo">Техномарт</a>
                     <form class="search-form">
                         <input type="search" name="search" class="header-search" placeholder="Поиск:">
-                        <button type="submit" class="search-button" name="search-button">Искать</button>
+                        <button type="submit" class="search-button" name="search-button" tabindex="-1">Искать</button>
                     </form>
                     <a class="header-bookmarks" href="#">Закладки: <span id="bookmarks">0</span></a>
                     <a class="header-cart" href="#">Корзина: <span id="cart">0</span></a>
@@ -38,13 +38,13 @@
             </div>
             <nav class="header-navigation">
                 <ul class="site-navigation">
-                    <li><a href="#">Главная</a></li>
-                    <li><a href="#">Компания</a></li>
-                    <li><a href="catalog.html">Каталог</a></li>
-                    <li><a href="#">Новости</a></li>
-                    <li><a href="#">Спецпредложения</a></li>
-                    <li><a href="#">Доставка</a></li>
-                    <li><a href="#">Контакты</a></li>
+                    <li><a href="#" class="site-navigation-link">Главная</a></li>
+                    <li><a href="#" class="site-navigation-link">Компания</a></li>
+                    <li><a href="catalog.html" class="site-navigation-link">Каталог</a></li>
+                    <li><a href="#" class="site-navigation-link">Новости</a></li>
+                    <li><a href="#" class="site-navigation-link">Спецпредложения</a></li>
+                    <li><a href="#" class="site-navigation-link">Доставка</a></li>
+                    <li><a href="#" class="site-navigation-link">Контакты</a></li>
                 </ul>
             </nav>
         </header>
@@ -115,7 +115,7 @@
                             </a>
                         </h3>
                         <p class="catalog-item-image">
-                            <a class="item-img-link" href="#">
+                            <a class="item-img-link" href="#" tabindex="-1">
                                 <img src="img/Perforator_9000.jpg" width="218" height="170" alt="Перфоратор BOSCH
                                 BFG 9000">
                             </a>
@@ -137,7 +137,7 @@
                             </a>
                         </h3>
                         <p class="catalog-item-image">
-                            <a class="item-img-link" href="#">
+                            <a class="item-img-link" href="#" tabindex="-1">
                                 <img src="img/Perforator_3000.jpg" width="218" height="170" alt="Перфоратор BOSCH
                                 BFG 3000">
                             </a>
@@ -159,7 +159,7 @@
                             </a>
                         </h3>
                         <p class="catalog-item-image">
-                            <a class="item-img-link" href="#">
+                            <a class="item-img-link" href="#" tabindex="-1">
                                 <img src="img/Perforator_6000.jpg" width="218" height="170" alt="Перфоратор BOSCH
                             BFG 6000">
                             </a>
@@ -181,7 +181,7 @@
                             </a>
                         </h3>
                         <p class="catalog-item-image">
-                            <a class="item-img-link" href="#">
+                            <a class="item-img-link" href="#" tabindex="-1">
                                 <img src="img/Perforator_2000.jpg" width="218" height="170" alt="Перфоратор BOSCH
                                 BFG 2000">
                             </a>
@@ -287,7 +287,7 @@
                                         Залезть в долговую яму стало проще!
                                         Кредитные консультанты придут вам на помощь.
                                     </p>
-                                    <a class="button-red credit-button" href="#">Отправить заявку</a>
+                                    <a class="button-red credit-button" href="#" tabindex="-1">Отправить заявку</a>
                                 </div>
                             </div>
                         </div>
@@ -353,13 +353,13 @@
                         Все права защищены
                     </p>
                     <ul class="footer-social">
-                        <li><a class="social-button no-underline" href="#">Вконтакте</a></li>
-                        <li><a class="social-button no-underline" href="#">Фейсбук</a></li>
-                        <li><a class="social-button no-underline" href="#">Инстаграм</a></li>
+                        <li><a class="social-button-vk no-underline" href="#">Вконтакте</a></li>
+                        <li><a class="social-button-fb no-underline" href="#">Фейсбук</a></li>
+                        <li><a class="social-button-inst no-underline" href="#">Инстаграм</a></li>
                     </ul>
                     <p class="footer-feedback">
                         <b>Обратная связь:</b>
-                        <a class="feedback-email">mail@htmlacademy.ru</a>
+                        <a class="feedback-email" tabindex="0">mail@htmlacademy.ru</a>
                     </p>
                     <p class="footer-copyright">
                         <b>Разработано —</b>
