@@ -159,6 +159,7 @@ img {
     background-image: url("../img/new_flag.png");
     background-position: 50% 50%;
     background-repeat: no-repeat;
+    z-index: 2;
 }
 
 /* styles for red buttons */
@@ -273,38 +274,55 @@ img {
     color: #ffffff;
     background-color: #293449;
     border: none;
+    -webkit-appearance: none;
 }
 
 .header-top-inner .header-search::-webkit-input-placeholder {
     color: #ffffff;
+    opacity: 1;
 }
 
 .header-top-inner .header-search:-ms-input-placeholder {
     color: #ffffff;
+    opacity: 1;
 }
 
 .header-top-inner .header-search::-ms-input-placeholder {
     color: #ffffff;
+    opacity: 1;
 }
 
 .header-top-inner .header-search::placeholder {
     color: #ffffff;
+    opacity: 1;
 }
 
 .header-top-inner .header-search:focus::-webkit-input-placeholder {
     color: #000000;
+    opacity: 1;
 }
 
 .header-top-inner .header-search:focus:-ms-input-placeholder {
     color: #000000;
+    opacity: 1;
 }
 
 .header-top-inner .header-search:focus::-ms-input-placeholder {
     color: #000000;
+    opacity: 1;
 }
 
 .header-top-inner .header-search:focus::placeholder {
     color: #000000;
+    opacity: 1;
+}
+
+.header-top-inner .header-search::-ms-clear {
+    display: none;
+}
+
+.header-top-inner .header-search::-webkit-search-cancel-button {
+    display: none;
 }
 
 .header-top-inner .search-button {
@@ -968,20 +986,20 @@ img {
     line-height: 38px;
     text-align: center;
     vertical-align: top;
-    background-color: rgba(0%, 0%, 0%, 0.1);
+    background-color: rgba(0, 0, 0, 0.1);
 }
 
 .goods-categories-button:hover,
 .offers-button:hover,
 .goods-categories-button:focus,
 .offers-button:focus {
-    background-color: rgba(0%, 0%, 0%, 0.2);
+    background-color: rgba(0, 0, 0, 0.2);
     outline: none;
 }
 
 .goods-categories-button:active,
 .offers-button:active {
-    background-color: rgba(0%, 0%, 0%, 0.3);
+    background-color: rgba(0, 0, 0, 0.3);
 }
 
 /* goods-and-offers slider */
@@ -1103,7 +1121,7 @@ img {
     padding: 0;
     position: relative;
     background-color: #221713;
-    background-position: 0% 0%;
+    background-position: 0 0;
     background-repeat: no-repeat;
 }
 
@@ -1257,8 +1275,8 @@ img {
     right:0;
 }
 
-/* styles for servis-block */
-.servis {
+/* styles for service-block */
+.service {
     min-width: 960px;
     min-height: 522px;
     margin-bottom: 53px;
@@ -1266,14 +1284,14 @@ img {
     background-color: #f4f8f9;
 }
 
-.servis-container {
+.service-container {
     width: 960px;
     margin: 0 auto;
     padding: 0;
     padding-left: 10px;
 }
 
-.servis-container h2 {
+.service-container h2 {
     margin-top: 0;
     font-family: 'Cuprum', Arial, sans-serif;
     font-size: 30px;
@@ -1282,46 +1300,46 @@ img {
     text-transform: uppercase;
 }
 
-.servis-container p {
+.service-container p {
     margin: 0;
     font-family: 'PT Sans', Arial, sans-serif;
     font-size: 13px;
     line-height: 24px;
 }
 
-.servis-container .good-shop {
+.service-container .good-shop {
     width: 410px;
 }
 
-.servis-slider {
+.service-slider {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     position: relative;
 }
 
-.servis-controls {
+.service-controls {
     width: 240px;
     margin-top: 68px;
     margin-right: 62px;
     position: relative;
 }
 
-.servis-controls::after,
-.servis-controls:after {
+.service-controls::after,
+.service-controls:after {
     content: "";
     width: 10px;
     height: 279px;
     position: absolute;
     top: -50px;
     left: 230px;
-    background-image: url("../img/servis-shadow.png");
+    background-image: url("../img/service-shadow.png");
     background-position: 50% 50%;
     background-repeat: no-repeat;
     z-index: 2;
 }
 
-.servis-controls label {
+.service-controls label {
     display: inline-block;
     width: 240px;
     height: 61px;
@@ -1339,22 +1357,22 @@ img {
     background-color: #32425c;
 }
 
-.servis-btn-1:checked ~ .servis-controls label[for="servis-btn-1"],
-.servis-btn-2:checked ~ .servis-controls label[for="servis-btn-2"],
-.servis-btn-3:checked ~ .servis-controls label[for="servis-btn-3"] {
+.service-btn-1:checked ~ .service-controls label[for="service-btn-1"],
+.service-btn-2:checked ~ .service-controls label[for="service-btn-2"],
+.service-btn-3:checked ~ .service-controls label[for="service-btn-3"] {
     color: #32425c;
     -webkit-box-shadow: 0 1px 0 #ffffff, inset 0 1px 0 #ffffff;
             box-shadow: 0 1px 0 #ffffff, inset 0 1px 0 #ffffff;
     background-color: #ffffff;
 }
 
-.servis-btn-1:focus ~ .servis-controls label[for="servis-btn-1"],
-.servis-btn-2:focus ~ .servis-controls label[for="servis-btn-2"],
-.servis-btn-3:focus ~ .servis-controls label[for="servis-btn-3"] {
+.service-btn-1:focus ~ .service-controls label[for="service-btn-1"],
+.service-btn-2:focus ~ .service-controls label[for="service-btn-2"],
+.service-btn-3:focus ~ .service-controls label[for="service-btn-3"] {
     opacity: 0.5;
 }
 
-.servis-inner {
+.service-inner {
     width: 648px;
     height: 285px;
     margin: 0;
@@ -1363,14 +1381,14 @@ img {
     overflow: hidden;
 }
 
-.servis-slides {
+.service-slides {
     width: 300%;
     height: 285px;
     margin: 0;
     padding: 0;
 }
 
-.servis-slides .servis-slide {
+.service-slides .service-slide {
     float: left;
     width: 648px;
     height: 285px;
@@ -1379,19 +1397,24 @@ img {
     padding-left: 20px;
 }
 
-.servis-slide-1 p {
+.service-slide p {
+    max-height: 120px;
+    overflow: hidden;
+}
+
+.service-slide-1 p {
     width: 275px;
 }
 
-.servis-slide-2 p {
+.service-slide-2 p {
     width: 375px;
 }
 
-.servis-slide-3 p {
+.service-slide-3 p {
     width: 280px;
 }
 
-.servis-slide h3 {
+.service-slide h3 {
     margin: 7px 0 35px;
     font-family: 'Cuprum', Arial, sans-serif;
     font-size: 36px;
@@ -1400,39 +1423,39 @@ img {
     color: #32425c;
 }
 
-.servis-btn-1:checked ~ .servis-inner .servis-slides {
+.service-btn-1:checked ~ .service-inner .service-slides {
     -webkit-transform: translate(0);
         -ms-transform: translate(0);
             transform: translate(0);
 }
   
-.servis-btn-2:checked ~ .servis-inner .servis-slides {
+.service-btn-2:checked ~ .service-inner .service-slides {
     -webkit-transform: translate(-648px);
         -ms-transform: translate(-648px);
             transform: translate(-648px);
 }
   
-.servis-btn-3:checked ~ .servis-inner .servis-slides {
+.service-btn-3:checked ~ .service-inner .service-slides {
     -webkit-transform: translate(-1296px);
         -ms-transform: translate(-1296px);
             transform: translate(-1296px);
 }
 
-.servis-slides .servis-slide-1 {
-    background-image: url(../img/servis-delivery.svg);
+.service-slides .service-slide-1 {
+    background-image: url(../img/service-delivery.svg);
     background-position: 94.5% 95%;
     background-repeat: no-repeat;
 }
 
-.servis-slides .servis-slide-2 {
-    background-image: url(../img/servis-guarantee.svg);
-    background-position: 99.2% 0%;
+.service-slides .service-slide-2 {
+    background-image: url(../img/service-guarantee.svg);
+    background-position: 99.2% 0;
     background-repeat: no-repeat;
 }
 
-.servis-slides .servis-slide-3 {
-    background-image: url(../img/servis-credit.svg);
-    background-position: 100% 0%;
+.service-slides .service-slide-3 {
+    background-image: url(../img/service-credit.svg);
+    background-position: 100% 0;
     background-repeat: no-repeat;
 }
 
@@ -2094,7 +2117,6 @@ img {
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 0;
 }
 
 .catalog-item:hover::before,
@@ -2105,7 +2127,7 @@ img {
 
 .catalog-item h3 {
     margin: 0;
-    margin-top: 4px;
+    margin-top: 179px;
     padding: 0 30px;
     font-size: 18px;
     font-weight: 700;
@@ -2147,10 +2169,10 @@ img {
 }
 
 .catalog-item-image {
-    -webkit-box-ordinal-group: 0;
-        -ms-flex-order: -1;
-            order: -1;
     margin: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
     z-index: 2;
 }
 
@@ -2225,14 +2247,13 @@ img {
 
 .catalog-item-cart {
     display: none;
-    -webkit-box-ordinal-group: 0;
-        -ms-flex-order: -1;
-            order: -1;
     width: 218px;
-    height: 170px;
+    height: 175px;
     margin: 0;
-    margin-top: -3px;
     padding: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
     font-family: 'Cuprum', Arial, sans-serif;
     font-size: 14px;
     font-weight: 400;
@@ -2311,7 +2332,6 @@ img {
     vertical-align: top;
     color: #32425c;
     cursor: pointer;
-    border: none;
     border: 3px solid #63a63e;
     background-color: #ffffff;
 }
@@ -2849,7 +2869,7 @@ img {
 }
 
 .modal-in-cart-container h3 {
-    margin: 64px 0px;
+    margin: 64px 0;
     margin-left: 55px;
     padding: 0;
     padding-bottom: 6px;
