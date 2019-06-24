@@ -1951,14 +1951,13 @@ img {
     height: 38px;
     padding-top: 5px; 
     padding-left: 23px;
-    padding-right: 17px; 
     position: relative;
 }
 
 .sort-filter h3 {
     margin: 0;
     padding: 0;
-    margin-right: 139px;
+    margin-right: 138px;
     font-size: 13px;
     font-weight: 400;
     line-height: 18px;
@@ -2007,8 +2006,10 @@ img {
     border-bottom: 1px solid #ee3643;
 }
 
-.sort-filter .order {
-    width: 45px;
+.sort-filter-inner .order {
+    width: 60px;
+    margin-right: 10px;
+    margin-bottom: 5px;
     font-size: 0;
 }
 
@@ -2053,14 +2054,14 @@ img {
 .order-option label[for="asc"]::before,
 .order-option label[for="asc"]:before {
     top: -4px;
-    left: -3px;
+    left: 2px;
     background-image: url("../img/icon-up-dir.png");
 }
 
 .order-option label[for="desc"]::before,
 .order-option label[for="desc"]:before {
     top: -4px;
-    left: 29px;
+    left: 34px;
     background-image: url("../img/icon-down-dir.png");
 }
 
@@ -2358,6 +2359,14 @@ img {
 }
 
 .pagination-item a {
+    display: inline-block;
+    width: 38px;
+    height: 38px;
+    padding: 0;
+    padding-top: 10px;
+    margin: 0;
+    margin-top: -10px;
+    vertical-align: top;
     color: #000000;
 }
 
@@ -2365,13 +2374,12 @@ img {
     color: #000000;
 }
 
-.pagination-item a,
 .pagination-item {
     display: inline-block;
     width: 38px;
     height: 38px;
     margin-right: 10px;
-    line-height: 38px;
+    padding-top: 10px;
     text-align: center;
     vertical-align: top;
     text-transform: uppercase;
@@ -2380,21 +2388,25 @@ img {
     border-radius: 4px;
 }
 
+.pagination-item:last-of-type,
 .pagination-item:last-of-type a {
     width: 140px;
 }
 
-.pagination-item a:hover,
+.pagination-item:hover,
 .pagination-item a:focus {
     border: 1px solid #bdc6ca;
     outline: none;
 }
 
-.pagination-item a:active {
+.pagination-item:active {
     border: 1px solid #ee3643;
 }
 
 .pagination-item-current {
+    width: 40px;
+    height: 40px;
+    margin-top: -1px;
     color: #ffffff;
     background-color: #ee3643;
 }
@@ -2810,7 +2822,6 @@ img {
     width: 460px;
     min-height: 114px;
     padding: 8px 14px;
-    padding-left: -150px;
     text-align: left;
     resize: none;
     overflow: auto;
