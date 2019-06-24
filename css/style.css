@@ -1950,14 +1950,14 @@ img {
     width: 700px;
     height: 38px;
     padding-top: 5px; 
-    padding-left: 23px;
+    padding-left: 22px;
     position: relative;
 }
 
 .sort-filter h3 {
     margin: 0;
     padding: 0;
-    margin-right: 138px;
+    margin-right: 139px;
     font-size: 13px;
     font-weight: 400;
     line-height: 18px;
@@ -1973,8 +1973,8 @@ img {
 }
 
 .sort-filter .sort-type {
-    width: 450px;
-    margin-right: 46px;
+    width: 360px;
+    margin-right: 39px;
 }
 
 .sort-option label {
@@ -2007,7 +2007,6 @@ img {
 }
 
 .sort-filter-inner .order {
-    width: 60px;
     margin-right: 10px;
     margin-bottom: 5px;
     font-size: 0;
