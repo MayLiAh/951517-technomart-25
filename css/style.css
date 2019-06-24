@@ -2823,8 +2823,14 @@ img {
     font-weight: 400;
     line-height: 18px;
     text-transform: uppercase;
+    cursor: pointer;
     border: none;
     background-color: #ee3643;
+}
+
+.write-us-submit .write-us-button:hover,
+.write-us-submit .write-us-button:focus {
+    background-color: #ca2c37;
 }
 
 /*item-in-cart modal window */

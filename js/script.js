@@ -24,8 +24,8 @@ writeUsButton.addEventListener('click', (event) => {
   event.preventDefault();
   if (!writeUsModal.classList.contains('modal-show')) {
     writeUsModal.classList.add('modal-show');
+    writeUsForm.querySelector(".write-name").focus();
   }
-  name.focus();
 });
 
 writeUsFormSubmit.addEventListener('click', (event) => {
@@ -66,6 +66,7 @@ closeMapModalButton.addEventListener('click', () => {
 closeWriteUsModalButton.addEventListener('click', () => {
   writeUsModal.classList.remove('modal-show');
   writeUsContainer.classList.remove('modal-error');
+  document.querySelector('.contacts-write-us').focus();
 })
 
 const modals = document.querySelectorAll('.modal');
@@ -74,6 +75,9 @@ document.addEventListener("keydown", function (event) {
   if (event.keyCode === 27) {
     event.preventDefault();
     writeUsContainer.classList.remove('modal-error');
+    if (writeUsModal.classList.contains('modal-show')) {
+      document.querySelector('.contacts-write-us').focus();
+    }
     Array.from(modals).forEach((modal) => {
       if (modal.classList.contains('modal-show')) {
         modal.classList.remove('modal-show');
