@@ -1279,7 +1279,7 @@ img {
 .service {
     min-width: 960px;
     min-height: 522px;
-    margin-bottom: 53px;
+    margin-bottom: 54px;
     padding-top: 68px;
     background-color: #f4f8f9;
 }
@@ -1467,7 +1467,7 @@ img {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    margin-bottom: 85px;
+    margin-bottom: 86px;
 }
 
 .about-us h2 {
@@ -1546,8 +1546,8 @@ img {
 
 .contacts-map img {
     margin: 0;
-    margin-bottom: 37px;
-    margin-top: 5px;
+    margin-bottom: 31px;
+    margin-top: 7px;
     padding: 0;
 }
 
@@ -2467,14 +2467,14 @@ img {
     display: inline-block;
     width: 220px;
     height: 68px;
-    margin-bottom: 30px;
+    margin-bottom: 28px;
     font-size: 0;
     vertical-align: top;
     cursor: pointer;
     -webkit-box-shadow: inset 0 -5px 0 rgba(0, 0, 0, 0.24);
             box-shadow: inset 0 -5px 0 rgba(0, 0, 0, 0.24);
     background-image: url("../img/footer-logo.svg");
-    background-position: 50% 50%;
+    background-position: 50% 45%;
     background-repeat: no-repeat;
     background-color: #ee3643;
 }
@@ -2500,7 +2500,7 @@ img {
     -webkit-box-align: end;
         -ms-flex-align: end;
             align-items: flex-end;
-    margin-top: 40px;
+    margin-top: 37px;
 }
 
 .footer-navigation-lists ul {
@@ -2512,7 +2512,7 @@ img {
 }
 
 .footer-navigation-lists .footer-categories-navigation {
-    margin-top: 33px;
+    margin-top: 35px;
 }
 
 .footer-navigation-lists li {
@@ -2556,7 +2556,7 @@ img {
 .page-footer-bottom {
     min-width: 960px;
     margin: 0;
-    margin-top: 50px;
+    margin-top: 47px;
     padding: 0;
     font-size: 16px;
     font-weight: 400;
@@ -2575,7 +2575,7 @@ img {
     width: 960px;
     min-height: 107px;
     margin: 0 auto;
-    padding: 0 10px;
+    padding: 7px 10px 0;
 }
 
 .company-rights {
